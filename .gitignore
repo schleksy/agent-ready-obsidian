@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+.obsidian/
+.trash/
+private/
+local/
+backups/
+*.zip
+*.log
+coverage.xml
+.coverage

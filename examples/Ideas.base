@@ -1,0 +1,15 @@
+filters:
+  and:
+    - 'file.inFolder("30 Incubator")'
+    - 'file.ext == "md"'
+    - 'note.type == "idea"'
+    - 'note.status != "promoted"'
+    - 'note.status != "rejected"'
+views:
+  - type: table
+    name: Possibilities
+    order:
+      - file.name
+      - note.status
+      - note.idea_type
+      - note.next_step

@@ -1,0 +1,15 @@
+filters:
+  and:
+    - 'file.inFolder("20 Projects")'
+    - 'file.ext == "md"'
+    - 'note.type == "project"'
+    - 'note.status != "completed"'
+    - 'note.status != "cancelled"'
+views:
+  - type: table
+    name: Unfinished projects
+    order:
+      - file.name
+      - note.status
+      - note.outcome
+      - note.next_step
